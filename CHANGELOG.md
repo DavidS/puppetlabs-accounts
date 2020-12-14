@@ -2,19 +2,38 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v6.4.0](https://github.com/puppetlabs/puppetlabs-accounts/tree/v6.4.0) (2020-12-14)
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-accounts/compare/v6.3.0...v6.4.0)
+
+### Added
+
+- pdksync - \(maint\) - Add support for Puppet 7 [\#350](https://github.com/puppetlabs/puppetlabs-accounts/pull/350) ([pmcmaw](https://github.com/pmcmaw))
+- MODULES-10862 add support for authorized\_keys file mode [\#338](https://github.com/puppetlabs/puppetlabs-accounts/pull/338) ([simondeziel](https://github.com/simondeziel))
+
 ## [v6.3.0](https://github.com/puppetlabs/puppetlabs-accounts/tree/v6.3.0) (2020-09-22)
 
-[Full Changelog](https://github.com/puppetlabs/puppetlabs-accounts/compare/v6.1.1...v6.3.0)
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-accounts/compare/v6.2.0...v6.3.0)
 
 ### Added
 
 - Allow for Sensitive type passwords in accounts::user [\#333](https://github.com/puppetlabs/puppetlabs-accounts/pull/333) ([jarretlavallee](https://github.com/jarretlavallee))
+
+### Fixed
+
+- \(MODULES-10798\) Ensure group is created for user only if undefined [\#334](https://github.com/puppetlabs/puppetlabs-accounts/pull/334) ([michaeltlombardi](https://github.com/michaeltlombardi))
+
+## [v6.2.0](https://github.com/puppetlabs/puppetlabs-accounts/tree/v6.2.0) (2020-08-20)
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-accounts/compare/v6.1.1...v6.2.0)
+
+### Added
+
 - pdksync - \(IAC-973\) - Update travis/appveyor to run on new default branch main [\#318](https://github.com/puppetlabs/puppetlabs-accounts/pull/318) ([david22swan](https://github.com/david22swan))
 - \(IAC-746\) - Add ubuntu 20.04 support [\#312](https://github.com/puppetlabs/puppetlabs-accounts/pull/312) ([david22swan](https://github.com/david22swan))
 
 ### Fixed
 
-- \(MODULES-10798\) Ensure group is created for user only if undefined [\#334](https://github.com/puppetlabs/puppetlabs-accounts/pull/334) ([michaeltlombardi](https://github.com/michaeltlombardi))
 - \(IAC-975\) - Removal of inappropriate terminology in module [\#320](https://github.com/puppetlabs/puppetlabs-accounts/pull/320) ([pmcmaw](https://github.com/pmcmaw))
 
 ## [v6.1.1](https://github.com/puppetlabs/puppetlabs-accounts/tree/v6.1.1) (2020-04-30)
@@ -119,7 +138,6 @@ All notable changes to this project will be documented in this file. The format 
 
 ### Fixed
 
-- \(MODULES-8216\) - Fix fail when custom\_sshkey\_path and managehome=false [\#194](https://github.com/puppetlabs/puppetlabs-accounts/pull/194) ([eimlav](https://github.com/eimlav))
 - Fixing the limitations section of the README [\#191](https://github.com/puppetlabs/puppetlabs-accounts/pull/191) ([HelenCampbell](https://github.com/HelenCampbell))
 
 ## [3.1.0](https://github.com/puppetlabs/puppetlabs-accounts/tree/3.1.0) (2018-09-27)
@@ -130,9 +148,11 @@ All notable changes to this project will be documented in this file. The format 
 
 - pdksync - \(FM-7392\) puppet 6 testing changes [\#187](https://github.com/puppetlabs/puppetlabs-accounts/pull/187) ([tphoney](https://github.com/tphoney))
 - pdksync - \(MODULES-6805\) metadata.json shows support for puppet 6 [\#185](https://github.com/puppetlabs/puppetlabs-accounts/pull/185) ([tphoney](https://github.com/tphoney))
+- \(LOC-173\) Delivering translation for readmes/README\_ja\_JP.markdown [\#177](https://github.com/puppetlabs/puppetlabs-accounts/pull/177) ([ehom](https://github.com/ehom))
 
 ### Fixed
 
+- \(MODULES-8216\) - Fix fail when custom\_sshkey\_path and managehome=false [\#194](https://github.com/puppetlabs/puppetlabs-accounts/pull/194) ([eimlav](https://github.com/eimlav))
 - \(maint\) corrected filename extension for both en and ja [\#182](https://github.com/puppetlabs/puppetlabs-accounts/pull/182) ([ehom](https://github.com/ehom))
 - Only take care of ssh-keys if ensure is set to 'present' [\#174](https://github.com/puppetlabs/puppetlabs-accounts/pull/174) ([opteamax](https://github.com/opteamax))
 - Rename README.markdown to README.MD [\#173](https://github.com/puppetlabs/puppetlabs-accounts/pull/173) ([clairecadman](https://github.com/clairecadman))
@@ -147,7 +167,6 @@ All notable changes to this project will be documented in this file. The format 
 
 ### Added
 
-- \(LOC-173\) Delivering translation for readmes/README\_ja\_JP.markdown [\#177](https://github.com/puppetlabs/puppetlabs-accounts/pull/177) ([ehom](https://github.com/ehom))
 - \(MODULES-7687\) - Added Darwin compatibility [\#167](https://github.com/puppetlabs/puppetlabs-accounts/pull/167) ([eimlav](https://github.com/eimlav))
 - \(FM-7287\) - i18n Process Implemented. [\#159](https://github.com/puppetlabs/puppetlabs-accounts/pull/159) ([david22swan](https://github.com/david22swan))
 - \(MODULES-5222\) - managevim option added to manifests.  [\#156](https://github.com/puppetlabs/puppetlabs-accounts/pull/156) ([david22swan](https://github.com/david22swan))
